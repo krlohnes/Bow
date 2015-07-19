@@ -45,6 +45,11 @@ body {
   margin-top: 100px;
 }
 
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+  color: white;
+}
+
 ul {
   list-style-type: none;
 }
