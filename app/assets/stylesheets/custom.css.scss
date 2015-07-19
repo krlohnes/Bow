@@ -11,22 +11,54 @@ $brand-light: #EAE8D1;
     display: none;
   }
   #bgvid {
-    left: -100%;
+    display: none;
+  }
+  #bgimg {
+    position: absolute;
+    left: -500px;
+    height: 100vh;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .cmn-toggle-switch {
     display: none !important;
   }
+  #bgvid { 
+    position: absolute;
+    opacity: 0.4;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+  #bgimg {
+    display: none;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .cmn-toggle-switch {
     display: none !important;
   }
+  #bgvid { 
+    position: absolute;
+    opacity: 0.4;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+  #bgimg {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .cmn-toggle-switch {
     display: none !important;
+  }
+  #bgvid { 
+    position: absolute;
+    opacity: 0.4;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+  #bgimg {
+    display: none;
   }
 }
 html {
@@ -607,7 +639,6 @@ border: none;
     z-index: 2; /* slide under group 5 and 7 */
   }
   #group6 .parallax__layer--back {
-    background: $brand-dark;
   }
 
   #group7 {
