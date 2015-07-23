@@ -5,7 +5,7 @@ $brand-light: #EAE8D1;
 
 @media (max-width: 767px) {
   .script {
-    font-size: 4em !important;
+    font-size: 25vw !important;
   }
   .header__full {
     display: none;
@@ -61,6 +61,7 @@ $brand-light: #EAE8D1;
     display: none;
   }
 }
+
 html {
 	position: relative;
   min-height: 100%;
@@ -73,6 +74,10 @@ body {
   font-family: 'proxima-nova';
 }
 
+.container {
+  width: 90%;
+}
+
 .content-wrapper {
   margin-top: 100px;
 }
@@ -80,6 +85,7 @@ body {
 a, a:hover, a:visited, a:active {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 ul {
@@ -94,22 +100,62 @@ ul {
 
 .script {
   font-family: 'voluta-script-pro';
-  font-size: 8em;
+  font-size: 16em;
   text-align: center;
 }
 
 a {
   text-decoration: none;
 }
+
+.play-button {
+  max-width: 80px;
+  height: auto;
+}
+
+#youtube__wrapper {
+  display: none;
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+
+.youtube__close {
+  position: fixed;
+  display: none;
+  top: 5%;
+  right: 4%;
+  font-size: 1.5em;
+  z-index: 200;
+}
+
+.youtube__player {
+  position: relative;
+  top:0;
+  left: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 100vh;
+}
+
+.youtube__player iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
 /*Header*/
-.header {
+#header {
   position: fixed;
   background-color: transparent;
   top: 0;
   width: 100%;
   padding: 10px;
   font-size: 1.2em;
-  z-index: 9999999999999999;
+  z-index: 9999999999;
 }
 
 .menu {
@@ -123,7 +169,7 @@ a {
 /*Mobile Header*/
 /*Nav Menu*/
 .brand-mark {
-  font-size: 0.5em !important;
+  font-size: 0.3em !important;
   margin-top: -20px;
 }
 .site-wrap {
@@ -415,6 +461,15 @@ border: none;
   left: 40%;
 }
 
+.albums {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.albums__tracklist {
+  font-size: 1.5em;
+}
+
 .video-wrapper {
   position: relative;
   height: 100vh;
@@ -588,8 +643,8 @@ border: none;
     transform: translateZ(-600px) scale(3);
     z-index: 2;
   }
-.parallax {
-    font-size: 200%;
+  .parallax {
+    
   }
 
    /* centre the content in the parallax layers */
@@ -632,7 +687,7 @@ border: none;
     z-index: 3; /* slide over group 4 and 6 */
   }
   #group5 .parallax__layer--base {
-    background: black
+    background: black;
   }
 
   #group6 {

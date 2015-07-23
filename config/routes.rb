@@ -3,6 +3,7 @@ Bow::Application.routes.draw do
   root "pages#home"
 
   get "test" => "pages#test"
+  get "video" => "pages#video"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
