@@ -78,6 +78,10 @@ body {
   width: 90%;
 }
 
+.clearfix {
+  overflow: auto;
+}
+
 .content-wrapper {
   margin-top: 100px;
 }
@@ -108,7 +112,12 @@ a {
   text-decoration: none;
 }
 
-.play-button {
+.play--button-music {
+  max-width: 40px;
+  height: auto;
+}
+
+.play--button-video {
   max-width: 80px;
   height: auto;
 }
@@ -417,7 +426,7 @@ border: none;
   height: 15px;
   background-color: white;
   opacity: 0.7;
-  z-index: 1000;
+  z-index: 99999999;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
@@ -462,12 +471,53 @@ border: none;
 }
 
 .albums {
+  margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.albums-listen {
+  margin-top: 0px;
+  padding-bottom: 20px;
 }
 
 .albums__tracklist {
-  font-size: 1.5em;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.albums__logos img{
+  top: 50%;
+  bottom: 50%;
+  padding: 5px;
+  max-width: 30%;
+  max-height: 60px;
+  vertical-align: middle;
+}
+
+.albums__coverart {
+  position: relative;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.albums__coverart-inner {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: rgba(0,0,0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.albums__coverart-text {
+  position: absolute;
+  text-align: center;
+  top: 32%;
+  left: 22%;
 }
 
 .video-wrapper {
@@ -488,6 +538,10 @@ border: none;
 
 .social-icons {
 
+}
+
+.fb-page {
+  height: 100px !important;
 }
 
 .social-icons img {
@@ -620,6 +674,14 @@ border: none;
     bottom: 0;
   }
 
+  .parallax__layer-rel {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
   .parallax__layer--fore {
     -webkit-transform: translateZ(90px) scale(.7);
     transform: translateZ(90px) scale(.7);
@@ -643,9 +705,6 @@ border: none;
     transform: translateZ(-600px) scale(3);
     z-index: 2;
   }
-  .parallax {
-    
-  }
 
    /* centre the content in the parallax layers */
   .title {
@@ -656,50 +715,44 @@ border: none;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
- #group1 {
-    z-index: 5; /* slide over group 2 */
+
+  #group1 {
+    z-index: 2; /* slide under groups 1 and 3 */
   }
-  #group1 .parallax__layer--base {
-    background: rgb(102,204,102);
+  #group1 .parallax__layer--back {
   }
 
   #group2 {
-    z-index: 3; /* slide under groups 1 and 3 */
+    z-index: 5; /* slide over group 2 and 4 */
   }
-  #group2 .parallax__layer--back {
-  }
-
-  #group3 {
-    z-index: 4; /* slide over group 2 and 4 */
-  }
-  #group3 .parallax__layer--base {
+  #group2 .parallax__layer--base {
     color: $brand-dark;
     background: #EAE8D1;
   }
 
-  #group4 {
+  #group3 {
     z-index: 2; /* slide under group 3 and 5 */
   }
-  #group4 .parallax__layer--deep {
+  #group3 .parallax__layer--deep {
   }
 
-  #group5 {
-    z-index: 3; /* slide over group 4 and 6 */
+  #group4 {
+    z-index: 5; /* slide over group 4 and 6 */
   }
-  #group5 .parallax__layer--base {
+  #group4 .parallax__layer--base {
     background: black;
   }
 
-  #group6 {
+  #group5 {
     z-index: 2; /* slide under group 5 and 7 */
   }
-  #group6 .parallax__layer--back {
+  #group5 .parallax__layer--back {
   }
 
-  #group7 {
-    z-index: 3; /* slide over group 7 */
+  #group6 {
+    z-index: 5; /* slide over group 7 */
   }
-  #group7 .parallax__layer--base {
+  #group6 .parallax__layer--base {
     background: rgb(255,241,100);
   }
 /*Parallax*/
