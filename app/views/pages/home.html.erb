@@ -7,15 +7,15 @@
   <div class='content-wrapper'>
     <div id="group1" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
-      </div>
-      <div class="parallax__layer parallax__layer--back">
-        <div class='center bow'>
-					<a href='#'><div class='bow__star bow__star-one'></div></a>
+      	<div class='center bow'>
+      	<a href='#'><div class='bow__star bow__star-one'></div></a>
 					<a href='#group3'><div class='bow__star bow__star-two'></div></a>
 					<a href='#group4'><div class='bow__star bow__star-three'></div></a>
 					<a href='#'><div class='bow__star bow__star-four'></div></a>
 					<a href='#'><div class='bow__star bow__star-five'></div></a>
-				</div>
+					</div>
+      </div>
+      <div class="parallax__layer parallax__layer--back">
       </div>
     </div>
     <div id="group2" class="parallax__group">
@@ -23,23 +23,33 @@
       	<h1 class='script'>Bow Music</h1>
       	<div class='row container albums'>
       		<div class='col-md-6'>
+      			<audio id='trackOne'>
+      				<source src="BeYourBow.ogg" type="audio/ogg">
+						  <source src="BeYourBow.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
     				<div id='beYourBow' class='albums__coverart center'>
 							<img src='/BeYourBowCoverArt.png' class='img-responsive'/>
 							<a><div id='beYourBowInner' class='albums__coverart-inner'>
 								<div class='albums__coverart-text'>
 									<h2>Be Your Bow</h2>
-									<img src='/PlayButton.png' class='play--button-music center'/>
+									<img id='trackOnePlay' src='/PlayButton.png' class='play--button-music center'/>
 								</div>
 							</div></a>
 						</div>
 					</div>
 					<div class='col-md-6'>
+						<audio id='trackTwo'>
+						  <source src="/Lovesound.ogg" type="audio/ogg">
+						  <source src="/Lovesound.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
 						<div id='lovesound' class='albums__coverart center'>
 							<img src='/LovesoundCoverArt.png' class='img-responsive'/>
 							<a><div id='lovesoundInner' class='albums__coverart-inner'>
 								<div class='albums__coverart-text'>
 									<h2>Lovesound</h2>
-									<img src='/PlayButton.png' class='play--button-music center'/>
+									<img id='trackTwoPlay' src='/PlayButton.png' class='play--button-music center'/>
 								</div>
 							</div></a>
 						</div>
@@ -134,12 +144,19 @@
         	<img src='/Instagram.png' />
         	<img src='/GooglePlus.png' />
         </div>
-        <!-- Instagram --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/2340b3df09008d1a964b35f8b30a08750c5d399a.html" id="instansive_2340b3df09" name="instansive_2340b3df09"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 20%; border: 0; overflow: hidden;"></iframe>
-        
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				<div class="fb-page" data-href="https://www.facebook.com/pages/Bow/12012275279" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
-					<div class="fb-xfbml-parse-ignore">
-						<blockquote cite="https://www.facebook.com/pages/Bow/12012275279"><a href="https://www.facebook.com/pages/Bow/12012275279">Bow</a></blockquote>
+        <div class='center contact'>
+        	<form>
+			    <input type='text'class="contact-input"/>
+			    </form>
+			  </div>
+        <div class='center'>
+	        <!-- Instagram --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/2340b3df09008d1a964b35f8b30a08750c5d399a.html" id="instansive_2340b3df09" name="instansive_2340b3df09"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 20%; border: 0; overflow: hidden;"></iframe>
+	        
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<div class="fb-page" data-href="https://www.facebook.com/pages/Bow/12012275279" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
+						<div class="fb-xfbml-parse-ignore">
+							<blockquote cite="https://www.facebook.com/pages/Bow/12012275279"><a href="https://www.facebook.com/pages/Bow/12012275279">Bow</a></blockquote>
+						</div>
 					</div>
 				</div>
       </div>
