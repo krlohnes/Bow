@@ -14,6 +14,10 @@ $(document).ready(function(){
 	});
 //Album Hover//
 //Audio Controls//
+	$('#lovesoundOpen').click(function() {
+		$('#trackOne')[0].pause();
+		$('#trackTwo')[0].pause();
+	});
 	$('#beYourBowInner').click(function() {
 		if ($('#trackTwo')[0].paused == false) {
 			$('#trackTwo')[0].pause();
