@@ -14,7 +14,7 @@ $(document).ready(function(){
 	});
 //Album Hover//
 //Audio Controls//
-	$('#trackOnePlay').click(function() {
+	$('#beYourBowInner').click(function() {
 		if ($('#trackTwo')[0].paused == false) {
 			$('#trackTwo')[0].pause();
 		}
@@ -24,7 +24,7 @@ $(document).ready(function(){
 			$('#trackOne')[0].play();
 		}
 	});
-	$('#trackTwoPlay').click(function() {
+	$('#lovesoundInner').click(function() {
 		if ($('#trackOne')[0].paused == false) {
 			$('#trackOne')[0].pause();
 		}
@@ -34,4 +34,23 @@ $(document).ready(function(){
 			$('#trackTwo')[0].play();
 		}
 	});
+	$('.albums__coverart-inner').click(function() { 
+		if ($('#trackOne')[0].paused == false) {
+			$('#trackOnePause').show();
+			$('#trackOnePlay').hide();
+			$('#trackTwoPause').hide();
+			$('#trackTwoPlay').show();
+		} else if ($('#trackTwo')[0].paused == false) {
+			$('#trackOnePause').hide();
+			$('#trackOnePlay').show();
+			$('#trackTwoPause').show();
+			$('#trackTwoPlay').hide();
+		} else {
+			$('#trackOnePause').hide();
+			$('#trackOnePlay').show();
+			$('#trackTwoPause').hide();
+			$('#trackTwoPlay').show();
+		}
+	});
 });
+//Audio Controls//

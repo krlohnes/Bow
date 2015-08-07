@@ -113,7 +113,13 @@ a {
 }
 
 .play--button-music {
-  max-width: 40px;
+  max-width: 60px;
+  height: auto;
+}
+
+.pause--button-music {
+  display: none;
+  max-width: 60px;
   height: auto;
 }
 
