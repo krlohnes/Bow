@@ -4,16 +4,28 @@
 	 viewBox="0 0 1350 2600" style="enable-background:new 0 0 1350 2600;" xml:space="preserve">
 <style type="text/css">
 	.path {
-	stroke-dasharray: 8000;
-  stroke-dashoffset: 8000;
-  animation: dash 5s linear forwards infinite;
-}
+		stroke-dasharray: 8000;
+	  stroke-dashoffset: 8000;
+	  animation: dash 5s linear forwards infinite;
+	  -webkit-animation: dash 5s linear forwards infinite;
+	  -moz-animation: dash 5s linear forwards infinite;
+	}
 
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
+	@keyframes dash {
+	  to {
+	    stroke-dashoffset: 0;
+	  }
+	}
+	@-webkit-keyframes dash {
+	  to {
+	    stroke-dashoffset: 0;
+	  }
+	}
+	@-moz-keyframes dash {
+	  to {
+	    stroke-dashoffset: 0;
+	  }
+	}
 </style>
 <polyline class="path" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-miterlimit="10" points="548,299 675,267 784,327 746,421 784,443 784,543 746,595 800,645 924,1009 800,1133 
 	859.729,1314.405 1014,2313 1172,2381 820,2475 334,2461 176,2381 414.377,1677.789 530,1083 530,973 473,854 520,725 611.5,677 

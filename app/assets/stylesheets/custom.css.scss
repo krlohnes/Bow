@@ -223,7 +223,6 @@ a {
 #body-nav {
   position: fixed;
   overflow: hidden;
-  top: 8px;
   /*left: 58px;*/
   background: transparent;
   text-align: left;
@@ -278,7 +277,7 @@ a {
   position: absolute;
   left: 0%;
   width: 100%;
-  top: 50%;
+  top: 55%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
