@@ -447,20 +447,25 @@ border: none;
 /*Toggle Button*/
 /*Mobile Header*/
 /*Bow*/
-.bow {  
-  position: relative;
-  height: 125vh;
-  width: auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/BowSillhouette.png);
+.bow_container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.bow__star-container {
+.bow {  
+  position: relative;
+  display: inline-block;
+}
+
+.bow_silhouette {
+  height: 105vh;
+}
+
+.bow_constellation {
   position: absolute;
-  height: 125vh;
-  width: auto;
+  height: 105vh;
+  z-index: 9999999;
 }
 
 .bow__star {
@@ -471,27 +476,27 @@ border: none;
   background-color: white;
   opacity: 0.7;
   z-index: 99999999;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  transition: all 200ms ease;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
 }
 
 .bow__star:hover {
   opacity: 1;
   width: 20px;
   height: 20px;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
 }
 
 .bow__star-one {
-  top: 12%;
-  left: 42%;
+  top: 11%;
+  left: 40%;
 }
 
 .bow__star-two {
@@ -500,18 +505,18 @@ border: none;
 }
 
 .bow__star-three {
-  top: 39%;
-  left: 64%;
+  top: 38%;
+  left: 66%;
 }
 
 .bow__star-four {
-  top: 40%;
-  left: 36%;
+  top: 39%;
+  left: 37%;
 }
 
 .bow__star-five {
   top: 25%;
-  left: 40%;
+  left: 43%;
 }
 
 .albums {
