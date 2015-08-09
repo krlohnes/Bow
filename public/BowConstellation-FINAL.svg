@@ -6,9 +6,9 @@
 	.path {
 		stroke-dasharray: 8000;
 	  stroke-dashoffset: 8000;
-	  animation: dash 5s linear forwards infinite;
-	  -webkit-animation: dash 5s linear forwards infinite;
-	  -moz-animation: dash 5s linear forwards infinite;
+	  animation: dash 5s 2s linear forwards infinite;
+	  -webkit-animation: dash 5s 2s linear forwards infinite;
+	  -moz-animation: dash 5s 2s linear forwards infinite;
 	}
 
 	@keyframes dash {
