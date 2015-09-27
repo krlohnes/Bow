@@ -9,13 +9,6 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta charset="utf-8"/>
         <style>
-            body {
-              background: #000000;
-              color:#cccccc;
-              margin: 0px;
-              padding: 0px;
-              border: 0px;
-            }
             canvas {
                       image-rendering: optimizeSpeed;
                       -webkit-interpolation-mode: nearest-neighbor;
@@ -71,6 +64,11 @@
     </head>
 
     <body>
+      <div class='star-wrapper'>
+    <div id='stars-near'></div>
+    <div id='stars-mid'></div>
+    <div id='stars-far'></div>
+  </div>
         <div class="gm4html5_div_class" id="gm4html5_div_id">
         <img src="goldcoins/splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen" style="display:none;"/>
             <!-- Create the canvas element the game draws to -->
