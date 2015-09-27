@@ -19,6 +19,12 @@ $brand-light: #EAE8D1;
     min-height: 100vh;
     min-width: 100%;
   }
+  canvas {
+    top: 30% !important;
+    left: 10% !important;
+    width: 320px;
+    height: 240px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .cmn-toggle-switch {
@@ -111,6 +117,16 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.keyboard-icon {
+  display: inline-block;
+  max-width: 60px;
+}
+
+#field {
+  position: fixed;
+  margin-left: -9000px;
 }
 
 .play--button-music {
@@ -815,8 +831,71 @@ border: none;
   #group6 .parallax__layer--base {
     background: rgb(255,241,100);
   }
+
+  #group7 {
+    z-index: 5; /* slide over group 2 and 4 */
+    min-height: 100vh;
+  }
+  #group7 .parallax__layer--base {
+    color: white;
+    background: black;
+  }
 /*Parallax*/
 
+/*Video Game*/
+div.gm4html5_div_class
+{
+  position: relative;
+  margin-top: -240px;
+  padding: 50px;
+  height: 100vh;
+}
+canvas {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  image-rendering: optimizeSpeed;
+  -webkit-interpolation-mode: nearest-neighbor;
+  -ms-touch-action: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  z-index: 9999999999999999;
+}
+
+.keyboard-toggle {
+  position: absolute;
+  bottom: 20px;
+  left: 25%;
+}
+/* START - Login Dialog Box */
+div.gm4html5_login
+{
+     padding: 20px;
+     position: absolute;
+     border: solid 2px #000000;
+     background-color: #404040;
+     color:#00ff00;
+     border-radius: 15px;
+     box-shadow: #101010 20px 20px 40px;
+}
+div.gm4html5_cancel_button
+{
+     float: right;
+}
+div.gm4html5_login_button
+{
+     float: left;
+}
+div.gm4html5_login_header
+{
+     text-align: center;
+}
+/* END - Login Dialog Box */
+:-webkit-full-screen {
+   width: 100%;
+   height: 100%;
+}
 
 /*Footer*/
 .footer {
