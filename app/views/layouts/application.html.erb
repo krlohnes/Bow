@@ -133,6 +133,9 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 </script>
 	</div>
 		<div>
+			<% flash.each do |name, msg| %>
+     		<%= content_tag(:div, msg, class: "alert alert-info") %>
+     		<% end %>
 			<%= yield %>
 		</div>
 	<div class='footer'>

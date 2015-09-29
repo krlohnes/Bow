@@ -1,12 +1,13 @@
 <div class="parallax">
-	<div class='star-wrapper'>
-		<div id='stars-near'></div>
-		<div id='stars-mid'></div>
-		<div id='stars-far'></div>
-	</div>
   <div class='content-wrapper'>
     <div id="group1" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base"><p class='center'>
+    	<div class='star-wrapper'>
+				<div id='stars-near'></div>
+				<div id='stars-mid'></div>
+				<div id='stars-far'></div>
+			</div>
+      <div class="parallax__layer parallax__layer--base">
+      	<p class='center'>
       	<img src='/Bow_revised.gif' class='bow-title'/>
       </p>
 	      <div class='bow_container'>
@@ -74,9 +75,6 @@
       </div>
     </div>
 
-    <!-- Run the game code -->
-    <script type="text/javascript" src="goldcoins/GOLD COINS.js?LGIZB=466600811"></script>
-
     <div id="group3" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
         <div class="title">
@@ -102,9 +100,15 @@
       <div class="parallax__layer parallax__layer--base">
         <h1 class='script'>Bow Live</h1>
 	      <div class='live__dates container'> 
-	      	<table class='table'>
+
+        <% if user_signed_in? %>
+        	<%= link_to new_show_path, class: 'new-show pull-right' do%>
+        	<span class='glyphicon glyphicon-plus-sign'></span> NEW SHOW
+        	<% end %>
+        <% end %>
+	      	<table class='table table-condensed event-table'>
 	      		<thead>
-	      			<tr>
+	      			<tr class='script-table-header'>
 	      				<th>Date</th>
 	      				<th>Venue</th>
 	      				<th>City</th>
@@ -112,36 +116,14 @@
 	      			</tr>
 	      		</thead>
 	      		<tbody>
-	      			<tr>
-		      			<td>Date 1</td>
-		      			<td>Venue 1</td>
-		      			<td>City 1</td>
-		      			<td>Tickets 1</td>
-		      		</tr>
-		      		<tr>
-		      			<td>Date 1</td>
-		      			<td>Venue 1</td>
-		      			<td>City 2</td>
-		      			<td>Tickets 1</td>
-		      		</tr>
-		      		<tr>
-		      			<td>Date 1</td>
-		      			<td>Venue 1</td>
-		      			<td>City 3</td>
-		      			<td>Tickets 1</td>
-		      		</tr>
-		      		<tr>
-		      			<td>Date 1</td>
-		      			<td>Venue 1</td>
-		      			<td>City 4</td>
-		      			<td>Tickets 1</td>
-		      		</tr>
-		      		<tr>
-		      			<td>Date 1</td>
-		      			<td>Venue 1</td>
-		      			<td>City 5</td>
-		      			<td>Tickets 1</td>
-		      		</tr>
+	      			<% @shows.each do |show| %>
+		      			<tr class='event-row '>
+			      			<td><%= show.start_time.strftime("%b %d %I:%M %p") %></td>
+			      			<td><%= show.venue %></td>
+			      			<td><%= show.city %></td>
+			      			<td><%= link_to "Tickets", show.ticket_link %></td>
+			      		</tr>
+		      		<% end%>
 	      		</tbody>
 	      	</table>
 	      </div>

@@ -1,4 +1,7 @@
 Bow::Application.routes.draw do
+  devise_for :users
+  resources :shows
+
   get "pages/home"
   root "pages#home"
 
