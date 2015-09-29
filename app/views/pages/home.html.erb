@@ -113,6 +113,9 @@
 	      				<th>Venue</th>
 	      				<th>City</th>
 	      				<th>Tickets</th>
+	      				<% if user_signed_in? %>
+	      					<th></th>
+	      				<% end %>
 	      			</tr>
 	      		</thead>
 	      		<tbody>
@@ -122,6 +125,16 @@
 			      			<td><%= show.venue %></td>
 			      			<td><%= show.city %></td>
 			      			<td><%= link_to "Tickets", show.ticket_link %></td>
+			      			<% if user_signed_in? %>
+			      				<td>
+			      					<%= link_to edit_show_path(show) do%>
+			      					<span class='glyphicon glyphicon-edit'></span>
+			      					<% end %>
+			      					<%= link_to show, method: :delete, data: { confirm: 'Are you sure?' } do%>
+			      					<span class='glyphicon glyphicon-trash'></span>
+			      					<% end %>
+			      				</td>
+			      			<% end %>
 			      		</tr>
 		      		<% end%>
 	      		</tbody>
