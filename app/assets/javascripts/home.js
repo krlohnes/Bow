@@ -1,5 +1,4 @@
-$(document).ready(function(){
-//Album Hover//
+$(document).ready(function(){//Album Hover//
 	$('#beYourBow').mouseover(function () {
 		$('#beYourBowInner').fadeIn();
 	});

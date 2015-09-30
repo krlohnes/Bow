@@ -869,31 +869,31 @@ border: none;
   #group1 .parallax__layer--back {
   }
 
-  #group2 {
+  #music {
     z-index: 5; /* slide over group 2 and 4 */
   }
-  #group2 .parallax__layer--base {
+  #music .parallax__layer--base {
     color: $brand-dark;
     background: #EAE8D1;
   }
 
-  #group3 {
+  #video {
     z-index: 2; /* slide under group 3 and 5 */
   }
-  #group3 .parallax__layer--deep {
+  #video .parallax__layer--deep {
   }
 
-  #group4 {
+  #live {
     z-index: 5; /* slide over group 4 and 6 */
   }
-  #group4 .parallax__layer--base {
+  #live .parallax__layer--base {
     background: black;
   }
 
-  #group5 {
+  #social {
     z-index: 2; /* slide under group 5 and 7 */
   }
-  #group5 .parallax__layer--back {
+  #social .parallax__layer--back {
   }
 
   #group6 {
