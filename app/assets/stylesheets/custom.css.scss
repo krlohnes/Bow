@@ -13,6 +13,9 @@ $brand-gold: #A79745;
   .event-row {
     font-size: 1em !important;
   }
+  .event-table {
+    max-width: 80% !important;
+  }
   .bow-title {
     max-height: 140px !important;
   }
@@ -32,7 +35,7 @@ $brand-gold: #A79745;
     min-width: 100%;
   }
   #social {
-    padding-bottom: 1800px !important;
+    padding-bottom: 2800px !important;
   }
   canvas {
     top: 30% !important;
@@ -678,7 +681,7 @@ border: none;
 
 .event-table {
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 80% !important;
 }
 
 .event-row {
