@@ -19,6 +19,9 @@ $brand-gold: #A79745;
   .header__full {
     display: none;
   }
+  .type-header {
+    max-width: 90% !important;
+  }
   #bgvid {
     display: none;
   }
@@ -27,6 +30,9 @@ $brand-gold: #A79745;
     left: -500px;
     min-height: 100vh;
     min-width: 100%;
+  }
+  #social {
+    padding-bottom: 1800px !important;
   }
   canvas {
     top: 30% !important;
@@ -138,6 +144,18 @@ a {
   max-height: 180px;
 }
 
+.type-header {
+  display: block;
+  margin: 80px auto;
+  max-height: 12em;
+}
+
+.type-subheader {
+  display: block;
+  margin: 80px auto 20px auto;
+  max-height: 6em;
+}
+
 .keyboard-icon {
   display: inline-block;
   max-width: 60px;
@@ -216,7 +234,7 @@ a {
 
 .social_feed-instagram {
   max-width: 500px;
-  margin: 50px auto;
+  margin: 20px auto 50px auto;
   border: 0;
   overflow: hidden;
 }
@@ -235,6 +253,10 @@ a {
   padding: 10px;
   font-size: 1.2em;
   z-index: 9999999999;
+}
+
+.header__full {
+  margin-right: -80px;
 }
 
 .menu {
@@ -565,8 +587,6 @@ border: none;
 }
 
 .albums-listen {
-  margin-top: 0px;
-  padding: 50px 0px 150px 0px;
 }
 
 .albums__tracklist {
@@ -877,10 +897,10 @@ border: none;
     background: #EAE8D1;
   }
 
-  #video {
+  #musicvideo {
     z-index: 2; /* slide under group 3 and 5 */
   }
-  #video .parallax__layer--deep {
+  #musicvideo .parallax__layer--deep {
   }
 
   #live {
@@ -892,6 +912,7 @@ border: none;
 
   #social {
     z-index: 2; /* slide under group 5 and 7 */
+    padding-bottom: 1400px;
   }
   #social .parallax__layer--back {
   }
