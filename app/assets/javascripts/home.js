@@ -58,6 +58,9 @@ $(document).ready(function(){//Album Hover//
 	//Audio Controls//
 	//Constellation Nav//
 	$('.bow__star').mouseover(function() {
-		$(this).show;
+		$(this).find('.bow__star-title').fadeIn();
+	});
+	$('.bow__star').mouseleave(function() {
+		$(this).find('.bow__star-title').fadeOut();
 	});
 });
