@@ -55,5 +55,9 @@ $(document).ready(function(){//Album Hover//
 			$('#trackTwoPlay').show();
 		}
 	});
+	//Audio Controls//
+	//Constellation Nav//
+	$('.bow__star').mouseover(function() {
+		$(this).show;
+	});
 });
-//Audio Controls//
